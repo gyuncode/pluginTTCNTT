@@ -16,11 +16,18 @@ class TTCNTT_Backend{
               '', 
               '2'
       );
+      add_submenu_page( 
+        $this->_menuSlug,  
+        'Courses', 
+        'Courses', 
+        'manage_options', 
+        $this->_menuSlug . 'Courses',  
+        array($this,'show_plugin_options')
+      );
   }
    
   public function show_plugin_options()
   {
-      
   }
    
  
