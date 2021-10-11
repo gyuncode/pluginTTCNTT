@@ -4,7 +4,6 @@ class TTCNTT_Backend{
   public function __construct(){ 
     add_action('admin_menu', array($this,'add_admin_menu'));
   }
- 
   public function add_admin_menu()
   {
       add_menu_page (
@@ -25,10 +24,7 @@ class TTCNTT_Backend{
         array($this,'show_plugin_options')
       );
   }
-   
   public function show_plugin_options()
   {
   }
-   
- 
 }

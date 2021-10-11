@@ -1,5 +1,5 @@
 <?php
-class TTCNTT_Fontend{
+class TTCNTT_Frontend{
   public function __construct(){
     
   }
