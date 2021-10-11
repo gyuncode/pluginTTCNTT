@@ -18,6 +18,6 @@ if(is_admin()){
   new TTCNTT_Backend();
 }
 else{
-  require_once 'fontend.php';
-  new TTCNTT_Fontend();
+  require_once 'frontend.php';
+  new TTCNTT_Frontend();
 }
