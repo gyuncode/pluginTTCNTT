@@ -1,6 +1,8 @@
 <?php
-class TTCNTT_Frontend{
-  public function __construct(){
-    
-  }
+class Ttcntt_Frontend
+{
+ public function __construct()
+ {
+
+ }
 }
