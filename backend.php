@@ -18,9 +18,41 @@ class TTCNTT_Backend{
       add_submenu_page( 
         $this->_menuSlug,  
         'Courses', 
-        'Courses', 
+        'Khoá học', 
         'manage_options', 
         $this->_menuSlug . 'Courses',  
+        array($this,'show_plugin_options')
+      );
+      add_submenu_page( 
+        $this->_menuSlug,  
+        'Courses', 
+        'Thêm khoá học', 
+        'manage_options', 
+        $this->_menuSlug . 'Add Courses',  
+        array($this,'show_plugin_options')
+      );
+      add_submenu_page( 
+        $this->_menuSlug,  
+        'Courses', 
+        'Học viên', 
+        'manage_options', 
+        $this->_menuSlug . 'Member',  
+        array($this,'show_plugin_options')
+      );
+      add_submenu_page( 
+        $this->_menuSlug,  
+        'Courses', 
+        'Thêm học viên', 
+        'manage_options', 
+        $this->_menuSlug . 'Add Member',  
+        array($this,'show_plugin_options')
+      );
+      add_submenu_page( 
+        $this->_menuSlug,  
+        'Courses', 
+        'Thống kê', 
+        'manage_options', 
+        $this->_menuSlug . 'Statistic',  
         array($this,'show_plugin_options')
       );
   }
