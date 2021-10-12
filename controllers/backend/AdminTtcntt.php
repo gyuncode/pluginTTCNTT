@@ -8,6 +8,6 @@ class Ttcntt_AdminTtcntt_Controller
  }
  public function display()
  {
-  echo 'Trang chu';
+  require_once TTCNTT_VIEW_PATH . DS . 'backend' . DS . 'display.php';
  }
 }
